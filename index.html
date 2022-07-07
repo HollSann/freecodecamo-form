@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="title-description">
+            <h1 id="title">Formulario de Inscripción</h1>
+            <p id="description">Gracias por participar de nuestra capacitación</p>
+
+        </header>
+        <form action="" id="survey-form">
+
+            <div id="form-container">
+                <div class="form-group">
+                    <label for="name" id="name-label">Nombre y Apellido</label>
+                    <input placeholder="Ingrese su nombre" required type="text" id="name">
+
+                </div>
+
+                <div class="form-group"><label for="email" id="email-label">Email</label>
+                    <input placeholder="Ingrese su correo electrónico" required type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="number" id="number-label">Edad </label>
+
+                    <input placeholder="Edad" type="number" id="number" min="18" max="50">
+                </div>
+
+
+                <div class="form-group">
+                    <p>Cómo aprendiste a programar? </p>
+                    <select name="rol" id="dropdown" required>
+                        <option disabled selected value>Seleccione una</option>
+                        <option value="Autodidacta">Autodidacta</option>
+                        <option value="Universidad">Universidad</option>
+                        <option value="BootCamps">BootCamps</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Recomendarias tu froma de aprendizaje a un amigo?</p>
+
+                    <label>
+                        <input type="radio" name="user-recomend" value="Definitivamente" class="input-radio">
+                        Definitivamente
+                    </label>
+
+                    <label>
+                        <input type="radio" name="user-recomend" value="Quizas" class="input-radio">
+                        Quizas
+                    </label>
+
+                    <label>
+                        <input type="radio" name="user-recomend" value="No" class="input-radio">
+                        No
+                    </label>
+                </div>
+
+
+                <div class="form-group">
+                    <p>Qué es lo que más te ayudó a seguir con tu manera de aprendizaje?</p>
+                    <select name="mostLike" id="most-like" class="form-control" required>
+                        <option disabled selected value>Seleccione una opción</option>
+                        <option value="desafiante">Familia</option>
+                        <option value="Amigos">Amigos</option>
+                        <option value="Disciplina">Disciplina</option>
+                        <option value="Libertad">Libertad</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-group">
+                    <p>Qué tecnologías aprendiste?</p>
+
+                    <label><input value="HTML" type="checkbox" class="input-checkbox" name="prefer">HTML</label>
+                    <label><input value="CSS" type="checkbox" class="input-checkbox" name="prefer">CSS</label>
+                    <label><input value="JavaScript" type="checkbox" class="input-checkbox"
+                            name="prefer">JavaScript</label>
+                    <label><input value="Python" type="checkbox" class="input-checkbox" name="prefer">Python</label>
+                    <label><input value="SQL" type="checkbox" class="input-checkbox" name="prefer">SQL</label>
+                    <label><input value="PHP" type="checkbox" class="input-checkbox" name="prefer">PHP</label>
+                    <label><input value="Java" type="checkbox" class="input-checkbox" name="prefer">Java</label>
+                    <label><input value="React" type="checkbox" class="input-checkbox" name="prefer">React</label>
+                    <label><input value="Angular" type="checkbox" class="input-checkbox" name="prefer">Angular</label>
+                    <label><input value="Vue" type="checkbox" class="input-checkbox" name="prefer">Vue</label>
+                    <label><input value="MongoDB" type="checkbox" class="input-checkbox" name="prefer">MongoDB</label>
+                    <label><input value="Spring" type="checkbox" class="input-checkbox" name="prefer">Spring</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Por qué quieres hacer esta capacitación?</p>
+                    <textarea name="comment" id="comments" cols="50" rows="10" class="input-textarea"
+                        placeholder="comenta aquí..."></textarea>
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Enviar </button>
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
